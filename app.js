@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const pets = require("./helper");
 
-const PORT = prosess.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 
 // "commonjs" style, original nodeJS
 // const x = require("y")
