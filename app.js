@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const pets = require("./helper");
 
+const PORT = prosess.env.PORT || 8000;
+
 // "commonjs" style, original nodeJS
 // const x = require("y")
 
@@ -67,7 +69,7 @@ app.get("/pet/:pet_name", (req, res) => {
 });
 
 // app.listen(3000, () => console.log("started listening on port 3000"));
-app.listen(process.env.PORT || 5000, () => console.log("started listening on port 3000"));
+app.listen(PORT, () => console.log(`started listening on port ${PORT}`));
 
 // dynamic object key access
 // const key = "z";
