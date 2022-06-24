@@ -66,7 +66,8 @@ app.get("/pet/:pet_name", (req, res) => {
     `);
 });
 
-app.listen(3000, () => console.log("started listening on port 3000"));
+// app.listen(3000, () => console.log("started listening on port 3000"));
+app.listen(process.env.PORT || 5000, () => console.log("started listening on port 3000"));
 
 // dynamic object key access
 // const key = "z";
